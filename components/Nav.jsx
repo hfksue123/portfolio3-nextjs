@@ -18,8 +18,8 @@ const Links = [
     path: "/resume",
   },
   {
-    name: "contact",
-    path: "/contact",
+    name: "work",
+    path: "/work",
   },
 ];
 const Nav = () => {
