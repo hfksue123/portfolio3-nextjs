@@ -1,5 +1,4 @@
 "use client";
-
 import CountUp from "react-countup";
 
 const stats = [
@@ -35,7 +34,7 @@ const Stats = () => {
                   delay={2}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
-                <p className={`${item.text.length<10 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}>{item.text}</p>
+                <p className={`${item.text.length<10 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80 dark:text-gray-600`}>{item.text}</p>
               </div>
             );
           })}

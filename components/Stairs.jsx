@@ -14,15 +14,15 @@ const stairAnimation = {
 
 // Tính toán index ngược lại để tạo delay
 const reserveIndex = (index) => {
-  const totalSteps = 6;
+  const totalSteps = 4;
   return totalSteps - index - 1;
 };
 
 const Stairs = () => {
   return (
     <>
-      {/* Render 6 motion divs với delay trên mỗi phần tử */}
-      {[...Array(6)].map((_, index) => (
+      {/* Render 4 motion divs với delay trên mỗi phần tử */}
+      {[...Array(4)].map((_, index) => (
         <motion.div
           key={index}
           variants={stairAnimation}
@@ -34,7 +34,7 @@ const Stairs = () => {
             ease: "easeInOut",
             delay: reserveIndex(index) * 0.1,
           }}
-          className="h-full w-full bg-white relative"
+          className="h-full w-full bg-white dark:bg-accent relative"
         />
       ))}
     </>

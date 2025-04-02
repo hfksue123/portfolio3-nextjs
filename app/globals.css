@@ -1,13 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-primary: #1c1c22;
   --color-accent: #00ff99;
   --color-accentHover: #00e187;
   --font-family: var(--font-inter);
+  --color-lightTheme: #ffffff;
   /* screen */
   --breakpoint-xs: 375px;
   --breakpoint-sm: 640px;

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${JetBrainsMono.className} ${inter.variable} antialiased leading-8 overflow-x-hidden dark:text-white`}
+        className={`${JetBrainsMono.className} ${inter.variable} antialiased leading-8 overflow-x-hidden dark:bg-lightTheme dark:text-gray-500`}
       >
         <Header />
         <StairTransition />
